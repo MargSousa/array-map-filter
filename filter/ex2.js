@@ -26,6 +26,8 @@ Expected OUTPUT for this sample:
 */
 
 function keepStarks(names) {
+  let starkFamily = names.filter(element => element.endsWith(' Stark') === true);
+  return starkFamily;
 }
 
 // DON'T TOUCH THIS!

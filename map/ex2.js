@@ -43,6 +43,18 @@ Expected OUTPUT for this sample
 */
 
 function getFoodCategories(foods) {
+  let arrayOutput = [];
+  
+  foods.map( element => {
+    if (element.isVegetarian === true) {
+      arrayOutput.push(`${element.food} is suitable for vegetarians`);
+    } else {
+      arrayOutput.push(`${element.food} is not suitable for vegetarians`);
+    };
+  });
+  
+  console.log(arrayOutput);
+  return arrayOutput;
 }
 
 
